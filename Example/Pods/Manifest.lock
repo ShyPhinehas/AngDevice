@@ -1,0 +1,16 @@
+PODS:
+  - AngDevice (0.1.0)
+
+DEPENDENCIES:
+  - AngDevice (from `../`)
+
+EXTERNAL SOURCES:
+  AngDevice:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AngDevice: f8f97a6d115d82ce3f40518fd37ac36b3ed748ab
+
+PODFILE CHECKSUM: 118ab28793c843fa5e95a94bca23540affab0f13
+
+COCOAPODS: 1.2.1

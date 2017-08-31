@@ -1,0 +1,6 @@
+framework module AngDevice {
+  umbrella header "AngDevice-umbrella.h"
+
+  export *
+  module * { export * }
+}
