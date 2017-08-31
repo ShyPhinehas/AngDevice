@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AngDevice_Example' do
+  pod 'AngDevice', :path => '../'
+
+  target 'AngDevice_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
