@@ -3,7 +3,7 @@ import UIKit
 
 open class AngDevice {
     
-    public typealias DeviceType = (modelName: String, deviceFamily: DeviceFamily)
+    public typealias DeviceType = (modelName: String, deviceFamily: DeviceFamily, systemName: String, version: String)
     
     public enum DeviceFamily{
         case phone
@@ -81,16 +81,7 @@ open class AngDevice {
             else {return .unknown}
         }()
         
-        return (r_identifier,deviceFamily)
+        return (r_identifier,deviceFamily,UIDevice.current.systemName,UIDevice.current.systemVersion)
         
     }()
-    
-    public var version: String{
-        return UIDevice.current.systemVersion
-    }
-    
-    public var name: String{
-        return UIDevice.current.systemName
-    }
-    
 }
