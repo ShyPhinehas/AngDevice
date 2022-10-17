@@ -14,16 +14,16 @@ open class AngDevice {
         case unknown
         
         public var isPad: Bool{
-            return self == .pad
+            return UIDevice.current.userInterfaceIdiom == .pad
         }
         
         public var isPhone: Bool{
-            return self == .phone
+            return UIDevice.current.userInterfaceIdiom == .phone
         }
         
     }
 
-    open static let current: AngDevice = AngDevice()
+    public static let current: AngDevice = AngDevice()
     
     public var deviceType: DeviceType = {
         var systemInfo = utsname()
